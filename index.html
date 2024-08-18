@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pinterest</title>
-    <link rel="icon" href="pinterest.webp">
+    <link rel="icon" href="image/pinterest.webp">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
    
@@ -17,36 +17,42 @@
 <body>
     <header>
         
-        <nav class="navbar navbar-expand-lg navbar-custom ">
-            <a class="navbar-brand" href="#">
-                <span>P</span> <!-- Pinterest Logo -->
+        <nav class="navbar navbar-expand-xl navbar-expand-lg navbar-expand-md navbar-expand navbar-custom  position-fixed">
+            
+                <img src="image/pinterest.webp" alt="">
+                <!--<span>P</span>--> <!-- Pinterest Logo --> 
                 
-            </a>
+           
             <!-- Hamburger Menu (for small screens) -->
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
     
             <div class="collapse navbar-collapse" id="navbarContent">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link home-c" href="#">
-                            <i class="fas fa-home"></i> <!-- Home Icon -->
+                <ul class="navbar-nav menu1">
+                    <li class="nav-item menu2">
+                        <a class="nav-link home-c " href="#">
+                            <span  id="home">Home</span>
+                          <!--  <i class="fas fa-home"></i>  Home Icon -->
+                            
                         </a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item menu2">
                         <a class="nav-link home-c" href="#">
-                            <i class="fas fa-compass"></i> <!-- Explore Icon -->
+                           <!--  <i class="fas fa-compass"></i> Explore Icon -->
+                            <span id="home1">Explore</span>
                         </a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item menu2">
                         <a class="nav-link home-c" href="#">
-                            <i class="fas fa-plus "></i> <!-- Create Icon -->
+                           <!-- <i class="fas fa-plus "></i>  Create Icon -->
+                            <span id="home1">Create</span>
                         </a>
                     </li>
                 </ul>
 
                 <div class="search-bar ml-3">
+                    
                     <input type="text" placeholder="Search">
                 </div>
                 <ul class="navbar-nav ml-auto">
@@ -80,360 +86,384 @@
             <div class="row my-masonry-grid">
                 <div class="col-6 col-md-4 col-lg-3 col-xl-2 wid hig1 grid-item">
                     <div class="image-wrapper">
-                        <img src="1.jpg" alt="Image 1" class="img-fluid">
+                        <img src="image/1.jpg" alt="Image 1" class="img-fluid">
                         <div class="overlay">
                             <div class="top-right">
                                 <button class="save-btn">Save</button>
                             </div>
                             <div class="bottom-right">
-                                
-                                <i class="download-icon">⬇️</i>
-                                <i class="menu-icon">...</i>
+                                <i class="fa-solid fa-location-arrow arrow"></i>
+                                <span>smile</span>
+                                <i class="fa-solid fa-download download"></i>
+                                <i class="fa-solid fa-ellipsis dot"></i>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-6 col-md-4 col-lg-3 col-xl-2 wid hig1 grid-item">
                     <div class="image-wrapper">
-                        <img src="2.jpg" alt="Image 1" class="img-fluid">
+                        <img src="image/2.jpg" alt="Image 1" class="img-fluid">
                         <div class="overlay">
                             <div class="top-right">
                                 <button class="save-btn">Save</button>
                             </div>
                             <div class="bottom-right">
-                                
-                                <i class="download-icon">⬇️</i>
-                                <i class="menu-icon">...</i>
+                                <i class="fa-solid fa-location-arrow arrow"></i>
+                                <span>block</span>
+                                <i class="fa-solid fa-download download"></i>
+                                <i class="fa-solid fa-ellipsis dot"></i>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-6 col-md-4 col-lg-3 col-xl-2 wid hig1 grid-item">
                     <div class="image-wrapper">
-                        <img src="3.jpg" alt="Image 1" class="img-fluid">
+                        <img src="image/3.jpg" alt="Image 1" class="img-fluid">
                         <div class="overlay">
                             <div class="top-right">
                                 <button class="save-btn">Save</button>
                             </div>
                             <div class="bottom-right">
-                                
-                                <i class="download-icon">⬇️</i>
-                                <i class="menu-icon">...</i>
+                                <i class="fa-solid fa-location-arrow arrow"></i>
+                                <span>path</span>
+                                <i class="fa-solid fa-download download"></i>
+                                <i class="fa-solid fa-ellipsis dot"></i>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-6 col-md-4 col-lg-3 col-xl-2 wid hig1 grid-item">
                     <div class="image-wrapper">
-                        <img src="4.jpg" alt="Image 1" class="img-fluid">
+                        <img src="image/4.jpg" alt="Image 1" class="img-fluid">
                         <div class="overlay">
                             <div class="top-right">
                                 <button class="save-btn">Save</button>
                             </div>
                             <div class="bottom-right">
-                                
-                                <i class="download-icon">⬇️</i>
-                                <i class="menu-icon">...</i>
+                                <i class="fa-solid fa-location-arrow arrow"></i>
+                                <span>Burger</span>
+                                <i class="fa-solid fa-download download"></i>
+                                <i class="fa-solid fa-ellipsis dot"></i>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-6 col-md-4 col-lg-3 col-xl-2 wid hig1 grid-item">
                     <div class="image-wrapper">
-                        <img src="5.jpg" alt="Image 1" class="img-fluid">
+                        <img src="image/5.jpg" alt="Image 1" class="img-fluid">
                         <div class="overlay">
                             <div class="top-right">
                                 <button class="save-btn">Save</button>
                             </div>
                             <div class="bottom-right">
-                                
-                                <i class="download-icon">⬇️</i>
-                                <i class="menu-icon">...</i>
+                                <i class="fa-solid fa-location-arrow arrow"></i>
+                                <span>sky</span>
+                                <i class="fa-solid fa-download download"></i>
+                                <i class="fa-solid fa-ellipsis dot"></i>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-6 col-md-4 col-lg-3 col-xl-2 wid hig1 grid-item">
                     <div class="image-wrapper">
-                        <img src="6.jpg" alt="Image 1" class="img-fluid">
+                        <img src="image/6.jpg" alt="Image 1" class="img-fluid">
                         <div class="overlay">
                             <div class="top-right">
                                 <button class="save-btn">Save</button>
                             </div>
                             <div class="bottom-right">
-                                
-                                <i class="download-icon">⬇️</i>
-                                <i class="menu-icon">...</i>
+                                <i class="fa-solid fa-location-arrow arrow"></i>
+                                <span>Boy</span>
+                                <i class="fa-solid fa-download download"></i>
+                                <i class="fa-solid fa-ellipsis dot"></i>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-6 col-md-4 col-lg-3 col-xl-2 wid hig1 grid-item">
                     <div class="image-wrapper">
-                        <img src="7.jpg" alt="Image 1" class="img-fluid">
+                        <img src="image/7.jpg" alt="Image 1" class="img-fluid">
                         <div class="overlay">
                             <div class="top-right">
                                 <button class="save-btn">Save</button>
                             </div>
                             <div class="bottom-right">
-                                
-                                <i class="download-icon">⬇️</i>
-                                <i class="menu-icon">...</i>
+                                <i class="fa-solid fa-location-arrow arrow"></i>
+                                <span>nature</span>
+                                <i class="fa-solid fa-download download"></i>
+                                <i class="fa-solid fa-ellipsis dot"></i>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-6 col-md-4 col-lg-3 col-xl-2 wid hig1 grid-item">
                     <div class="image-wrapper">
-                        <img src="8.jpg" alt="Image 1" class="img-fluid">
+                        <img src="image/8.jpg" alt="Image 1" class="img-fluid">
                         <div class="overlay">
                             <div class="top-right">
                                 <button class="save-btn">Save</button>
                             </div>
                             <div class="bottom-right">
-                                
-                                <i class="download-icon">⬇️</i>
-                                <i class="menu-icon">...</i>
+                                <i class="fa-solid fa-location-arrow arrow"></i>
+                                <span>Dollar</span>
+                                <i class="fa-solid fa-download download"></i>
+                                <i class="fa-solid fa-ellipsis dot"></i>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-6 col-md-4 col-lg-3 col-xl-2 wid hig1 grid-item">
                     <div class="image-wrapper">
-                        <img src="9.jpg" alt="Image 1" class="img-fluid">
+                        <img src="image/9.jpg" alt="Image 1" class="img-fluid">
                         <div class="overlay">
                             <div class="top-right">
                                 <button class="save-btn">Save</button>
                             </div>
                             <div class="bottom-right">
-                                
-                                <i class="download-icon">⬇️</i>
-                                <i class="menu-icon">...</i>
+                                <i class="fa-solid fa-location-arrow arrow"></i>
+                                <span>Rose</span>
+                                <i class="fa-solid fa-download download"></i>
+                                <i class="fa-solid fa-ellipsis dot"></i>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-6 col-md-4 col-lg-3 col-xl-2 wid hig1 grid-item">
                     <div class="image-wrapper">
-                        <img src="10.jpg" alt="Image 1" class="img-fluid">
+                        <img src="image/10.jpg" alt="Image 1" class="img-fluid">
                         <div class="overlay">
                             <div class="top-right">
                                 <button class="save-btn">Save</button>
                             </div>
                             <div class="bottom-right">
-                                
-                                <i class="download-icon">⬇️</i>
-                                <i class="menu-icon">...</i>
+                                <i class="fa-solid fa-location-arrow arrow"></i>
+                                <span>Screen</span>
+                                <i class="fa-solid fa-download download"></i>
+                                <i class="fa-solid fa-ellipsis dot"></i>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-6 col-md-4 col-lg-3 col-xl-2 wid hig1 grid-item">
                     <div class="image-wrapper">
-                        <img src="11.jpg" alt="Image 1" class="img-fluid">
+                        <img src="image/11.jpg" alt="Image 1" class="img-fluid">
                         <div class="overlay">
                             <div class="top-right">
                                 <button class="save-btn">Save</button>
                             </div>
                             <div class="bottom-right">
-                                
-                                <i class="download-icon">⬇️</i>
-                                <i class="menu-icon">...</i>
+                                <i class="fa-solid fa-location-arrow arrow"></i>
+                                <span>Moon</span>
+                                <i class="fa-solid fa-download download"></i>
+                                <i class="fa-solid fa-ellipsis dot"></i>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-6 col-md-4 col-lg-3 col-xl-2 wid hig1 grid-item">
                     <div class="image-wrapper">
-                        <img src="12.jpg" alt="Image 1" class="img-fluid">
+                        <img src="image/12.jpg" alt="Image 1" class="img-fluid">
                         <div class="overlay">
                             <div class="top-right">
                                 <button class="save-btn">Save</button>
                             </div>
                             <div class="bottom-right">
-                                
-                                <i class="download-icon">⬇️</i>
-                                <i class="menu-icon">...</i>
+                                <i class="fa-solid fa-location-arrow arrow"></i>
+                                <span>success</span>
+                                <i class="fa-solid fa-download download"></i>
+                                <i class="fa-solid fa-ellipsis dot"></i>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-6 col-md-4 col-lg-3 col-xl-2 wid hig1 grid-item">
                     <div class="image-wrapper">
-                        <img src="13.jpg" alt="Image 1" class="img-fluid">
+                        <img src="image/13.jpg" alt="Image 1" class="img-fluid">
                         <div class="overlay">
                             <div class="top-right">
                                 <button class="save-btn">Save</button>
                             </div>
                             <div class="bottom-right">
-                                
-                                <i class="download-icon">⬇️</i>
-                                <i class="menu-icon">...</i>
+                                <i class="fa-solid fa-location-arrow arrow"></i>
+                                <span>Strong</span>
+                                <i class="fa-solid fa-download download"></i>
+                                <i class="fa-solid fa-ellipsis dot"></i>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-6 col-md-4 col-lg-3 col-xl-2 wid hig1 grid-item">
                     <div class="image-wrapper">
-                        <img src="14.jpg" alt="Image 1" class="img-fluid">
+                        <img src="image/14.jpg" alt="Image 1" class="img-fluid">
                         <div class="overlay">
                             <div class="top-right">
                                 <button class="save-btn">Save</button>
                             </div>
                             <div class="bottom-right">
-                                
-                                <i class="download-icon">⬇️</i>
-                                <i class="menu-icon">...</i>
+                                <i class="fa-solid fa-location-arrow arrow"></i>
+                                <span>Car</span>
+                                <i class="fa-solid fa-download download"></i>
+                                <i class="fa-solid fa-ellipsis dot"></i>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-6 col-md-4 col-lg-3 col-xl-2 wid hig1 grid-item">
                     <div class="image-wrapper">
-                        <img src="15.jpg" alt="Image 1" class="img-fluid">
+                        <img src="image/15.jpg" alt="Image 1" class="img-fluid">
                         <div class="overlay">
                             <div class="top-right">
                                 <button class="save-btn">Save</button>
                             </div>
                             <div class="bottom-right">
-                                
-                                <i class="download-icon">⬇️</i>
-                                <i class="menu-icon">...</i>
+                                <i class="fa-solid fa-location-arrow arrow"></i>
+                                <span>Today</span>
+                                <i class="fa-solid fa-download download"></i>
+                                <i class="fa-solid fa-ellipsis dot"></i>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-6 col-md-4 col-lg-3 col-xl-2 wid hig1 grid-item">
                     <div class="image-wrapper">
-                        <img src="16.jpg" alt="Image 1" class="img-fluid">
+                        <img src="image/16.jpg" alt="Image 1" class="img-fluid">
                         <div class="overlay">
                             <div class="top-right">
                                 <button class="save-btn">Save</button>
                             </div>
                             <div class="bottom-right">
-                                
-                                <i class="download-icon">⬇️</i>
-                                <i class="menu-icon">...</i>
+                                <i class="fa-solid fa-location-arrow arrow"></i>
+                                <span>Cute Boy</span>
+                                <i class="fa-solid fa-download download"></i>
+                                <i class="fa-solid fa-ellipsis dot"></i>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-6 col-md-4 col-lg-3 col-xl-2 wid hig1 grid-item">
                     <div class="image-wrapper">
-                        <img src="17.jpg" alt="Image 1" class="img-fluid">
+                        <img src="image/17.jpg" alt="Image 1" class="img-fluid">
                         <div class="overlay">
                             <div class="top-right">
                                 <button class="save-btn">Save</button>
                             </div>
                             <div class="bottom-right">
-                                
-                                <i class="download-icon">⬇️</i>
-                                <i class="menu-icon">...</i>
+                                <i class="fa-solid fa-location-arrow arrow"></i>
+                                <span>Nature Vibe</span>
+                                <i class="fa-solid fa-download download"></i>
+                                <i class="fa-solid fa-ellipsis dot"></i>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-6 col-md-4 col-lg-3 col-xl-2 wid hig1 grid-item">
                     <div class="image-wrapper">
-                        <img src="18.jpg" alt="Image 1" class="img-fluid">
+                        <img src="image/18.jpg" alt="Image 1" class="img-fluid">
                         <div class="overlay">
                             <div class="top-right">
                                 <button class="save-btn">Save</button>
                             </div>
                             <div class="bottom-right">
-                                
-                                <i class="download-icon">⬇️</i>
-                                <i class="menu-icon">...</i>
+                                <i class="fa-solid fa-location-arrow arrow"></i>
+                                <span>fire</span>
+                                <i class="fa-solid fa-download download"></i>
+                                <i class="fa-solid fa-ellipsis dot"></i>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-6 col-md-4 col-lg-3 col-xl-2 wid hig1 grid-item">
                     <div class="image-wrapper">
-                        <img src="19.jpg" alt="Image 1" class="img-fluid">
+                        <img src="image/19.jpg" alt="Image 1" class="img-fluid">
                         <div class="overlay">
                             <div class="top-right">
                                 <button class="save-btn">Save</button>
                             </div>
                             <div class="bottom-right">
-                                
-                                <i class="download-icon">⬇️</i>
-                                <i class="menu-icon">...</i>
+                                <i class="fa-solid fa-location-arrow arrow"></i>
+                                <span>Birthday</span>
+                                <i class="fa-solid fa-download download"></i>
+                                <i class="fa-solid fa-ellipsis dot"></i>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-6 col-md-4 col-lg-3 col-xl-2 wid hig1 grid-item">
                     <div class="image-wrapper">
-                        <img src="20.jpg" alt="Image 1" class="img-fluid">
+                        <img src="image/20.jpg" alt="Image 1" class="img-fluid">
                         <div class="overlay">
                             <div class="top-right">
                                 <button class="save-btn">Save</button>
                             </div>
                             <div class="bottom-right">
-                                
-                                <i class="download-icon">⬇️</i>
-                                <i class="menu-icon">...</i>
+                                <i class="fa-solid fa-location-arrow arrow"></i>
+                                <span>Duck</span>
+                                <i class="fa-solid fa-download download"></i>
+                                <i class="fa-solid fa-ellipsis dot"></i>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-6 col-md-4 col-lg-3 col-xl-2 wid hig1 grid-item">
                     <div class="image-wrapper">
-                        <img src="21.jpg" alt="Image 1" class="img-fluid">
+                        <img src="image/21.jpg" alt="Image 1" class="img-fluid">
                         <div class="overlay">
                             <div class="top-right">
                                 <button class="save-btn">Save</button>
                             </div>
                             <div class="bottom-right">
-                                
-                                <i class="download-icon">⬇️</i>
-                                <i class="menu-icon">...</i>
+                                <i class="fa-solid fa-location-arrow arrow"></i>
+                                <span>Pixel</span>
+                                <i class="fa-solid fa-download download"></i>
+                                <i class="fa-solid fa-ellipsis dot"></i>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-6 col-md-4 col-lg-3 col-xl-2 wid hig1 grid-item">
                     <div class="image-wrapper">
-                        <img src="22.jpg" alt="Image 1" class="img-fluid">
+                        <img src="image/22.jpg" alt="Image 1" class="img-fluid">
                         <div class="overlay">
                             <div class="top-right">
                                 <button class="save-btn">Save</button>
                             </div>
                             <div class="bottom-right">
-                                
-                                <i class="download-icon">⬇️</i>
-                                <i class="menu-icon">...</i>
+                                <i class="fa-solid fa-location-arrow arrow"></i>
+                                <span>Lion</span>
+                                <i class="fa-solid fa-download download"></i>
+                                <i class="fa-solid fa-ellipsis dot"></i>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-6 col-md-4 col-lg-3 col-xl-2 wid hig1 grid-item">
                     <div class="image-wrapper">
-                        <img src="23.jpg" alt="Image 1" class="img-fluid">
+                        <img src="image/23.jpg" alt="Image 1" class="img-fluid">
                         <div class="overlay">
                             <div class="top-right">
                                 <button class="save-btn">Save</button>
                             </div>
                             <div class="bottom-right">
-                                
-                                <i class="download-icon">⬇️</i>
-                                <i class="menu-icon">...</i>
+                                <i class="fa-solid fa-location-arrow arrow"></i>
+                                <span>Sky Dive</span>
+                                <i class="fa-solid fa-download download"></i>
+                                <i class="fa-solid fa-ellipsis dot"></i>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-6 col-md-4 col-lg-3 col-xl-2 wid hig1 grid-item">
                     <div class="image-wrapper">
-                        <img src="24.jpg" alt="Image 1" class="img-fluid">
+                        <img src="image/24.jpg" alt="Image 1" class="img-fluid">
                         <div class="overlay">
                             <div class="top-right">
                                 <button class="save-btn">Save</button>
                             </div>
                             <div class="bottom-right">
-                                
-                                <i class="download-icon">⬇️</i>
-                                <i class="menu-icon">...</i>
+                                <i class="fa-solid fa-location-arrow arrow"></i>
+                                <span>fighter</span>
+                                <i class="fa-solid fa-download download"></i>
+                                <i class="fa-solid fa-ellipsis dot"></i>
                             </div>
                         </div>
                     </div>
